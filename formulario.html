@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Enviar Email</title>
+</head>
+
+
+<body>
+  <header class = "cabecalho">
+  <img class = "logo-imagem" src="emailLL.png" alt=" Logo Email">
+  </header>
+
+
+  <main class = "all">
+    <section>
+      <div class = "divisao">
+        <form method="post" action="envia-email.php" class="formulario">
+          
+          <label class = "texto" for="nome">NOME:</label>
+          <input class = "input" type="nome" id="nome" name="nome" required>
+        
+          <label class = "texto" for="email">DESTINATÁRIO:</label>
+          <input class = "input" type="email" id="email" name="email" required>
+          
+          <label class = "texto" for="assunto">ASSUNTO:</label>
+          <input class = "input" type="text" id="assunto" name="assunto" required>
+          
+          <label class = "texto" for="corpo">MENSAGEM:</label>
+          <textarea class = "corpo" id="mensagem" name="mensagem" required></textarea>
+          
+          <button class = "botao" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+</main>
+
+<footer class = "footer">
+        <h3>Desenvolvido por Lucas</h3>
+</footer>
+
+</body>
+</html>
